@@ -81,6 +81,7 @@ body {
   border-radius: 5px;
   color: #ffffff;
 }
+
 main,
 #sobre-mi,
 #skills,
@@ -151,6 +152,7 @@ main,
   from {
     transform: translateY(-50%);
   }
+
   to {
     transform: translateY(0%);
   }
@@ -160,28 +162,6 @@ main,
   color: #17d1ac;
 }
 
-.profile-picture-container {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 50;
-}
-.profile-picture-bg {
-  padding: 210px;
-  padding-top: 510px;
-  background-image: url(../imagenes/cv-foto.jpeg);
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 100%;
-  filter: grayscale(100%) drop-shadow(4px -3px 4px #17d1ac);
-  animation: fade 1.5s ease-in;
-}
-
-.wave {
-  position: absolute;
-  bottom: 0;
- 
-}
 /* seccion sobre mi */
 #sobre-mi {
   background-color: #161616;
@@ -192,7 +172,8 @@ main,
 }
 
 #sobre-mi h2 {
-  font-size: 60px;
+  padding: 30px;
+  font-size: 40px;
   color: #17d1ac;
   margin: 0;
   margin: 0 20px;
@@ -207,7 +188,7 @@ main,
 
 #sobre-mi p {
   color: #bfbfbf;
-  font-size: 14px;
+  font-size: 20px;
   width: 70%;
   font-weight: 300;
   line-height: 20px;
@@ -236,6 +217,7 @@ main,
   background-color: #ffffff;
   transform: scale(1.1);
 }
+
 /* seccion skills */
 #skills {
   background-color: #161616;
@@ -254,6 +236,7 @@ main,
   text-decoration: underline;
   text-decoration-color: #17d1ac;
 }
+
 .hard-skills-container,
 .soft-skills-container {
   position: absolute;
@@ -265,11 +248,12 @@ main,
 }
 
 .hard-skills-container h4,
-.soft-skills-container h4{
+.soft-skills-container h4 {
   font-size: 30px;
   color: #17d1ac;
 }
-.skill-icon-container  {
+
+.skill-icon-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -296,7 +280,10 @@ main,
 .soft-skills-container {
   top: 70%;
 }
+
 /*seccion formacion*/
+
+
 #formacion {
   padding-top: 50px;
 }
@@ -328,8 +315,8 @@ main,
 
 .educationIT-logo,
 .alura-logo,
-.ap-logo {
-  display: flex;
+.AWS-logo {
+  display: block;
   justify-content: center;
   align-items: center;
   width: 20%;
@@ -340,9 +327,9 @@ main,
 
 .educationIT-img,
 .alura-img,
-.ap-img {
-  width: 95%;
-  height: 90%;
+.AWS-img {
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
 }
 
@@ -388,6 +375,7 @@ main,
   outline: 1px solid #17d1ac;
   transform: scale(1.1);
 }
+
 #proyectos {
   background-color: #edf1fd;
   display: flex;
@@ -484,6 +472,7 @@ main,
   visibility: visible;
   opacity: 1;
 }
+
 /* seccion contacto */
 #contacto {
   position: relative;
@@ -533,6 +522,7 @@ main,
   font-weight: 300;
   margin-bottom: 10px;
 }
+
 /* seccion footer */
 
 .footer-main {
@@ -566,6 +556,7 @@ main,
 .footer a i:hover {
   color: #17d1ac;
 }
+
 /* Responsive */
 
 /* laptops */
@@ -582,6 +573,7 @@ main,
   #sobre-mi p {
     margin-bottom: 25px;
   }
+
   .cv-btn {
     width: 120px;
   }
@@ -635,6 +627,7 @@ main,
 
 /* tablets */
 @media screen and (max-width: 768px) {
+
   main,
   #sobre-mi,
   #skills,
@@ -748,6 +741,7 @@ main,
 }
 
 @media screen and (max-width: 630px) {
+
   main,
   #sobre-mi,
   #skills,
@@ -757,6 +751,7 @@ main,
     padding: 0;
     margin: 0;
   }
+
   .profile-picture-bg {
     padding: 180px;
   }
@@ -847,10 +842,12 @@ main,
     font-size: 20px;
     line-height: 25px;
   }
+
   .inicio-descripcion {
     font-size: 15px;
     text-align: center;
   }
+
   .inicio {
     font-size: 35px;
   }
@@ -987,9 +984,11 @@ main,
     text-align: center;
     font-size: 20px;
   }
+
   .form-contact-container label {
     font-size: 10px;
   }
+
   .form-mensaje-container {
     position: absolute;
     top: 400px;
@@ -1087,12 +1086,14 @@ main,
   .cv-btn {
     top: 86%;
   }
-/*secccion skills*/
+
+  /*secccion skills*/
   .hard-skills-title,
   .soft-skills-title {
     font-size: 30px;
   }
-  .skill-icon-container h4{
+
+  .skill-icon-container h4 {
     font-size: 20px;
   }
 
@@ -1103,7 +1104,8 @@ main,
   .soft-skills-container {
     top: 58%;
   }
-/*seccion formacion*/
+
+  /*seccion formacion*/
   #formacion {
     padding: 150px 10px;
   }
@@ -1118,7 +1120,9 @@ main,
     align-items: center;
   }
 
-  .educationIT-logo, .alura-logo, .ap-logo {
+  .educationIT-logo,
+  .alura-logo,
+  .ap-logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1127,7 +1131,7 @@ main,
     border-radius: 20px;
     box-shadow: 8px 8px 5px 0px rgb(0 0 0 / 75%);
   }
-  
+
   .educationIT-img,
   .alura-img,
   .ap-img {
@@ -1135,6 +1139,7 @@ main,
     height: 90%;
     border-radius: 10px;
   }
+
   .formacion-descripcion p:first-child {
     font-size: 13px;
   }
@@ -1143,7 +1148,8 @@ main,
     width: 100px;
     margin: 30px auto;
   }
-/*seccion proyectos*/
+
+  /*seccion proyectos*/
   .proyectos-container {
     width: 95%;
     height: 90%;
@@ -1227,30 +1233,37 @@ main,
   .formacion-descripcion p:last-child {
     font-size: 8px;
   }
+
   .info-btn {
     width: 70px;
     margin: 40px 5px;
   }
+
   .footer {
     font-size: 7px;
     word-spacing: 1px;
   }
+
   .footer img {
     width: 5px;
   }
 }
+
 @keyframes slide {
   from {
     transform: translateX(-100%);
   }
+
   to {
     transform: translateX(0%);
   }
 }
+
 @keyframes fade {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
