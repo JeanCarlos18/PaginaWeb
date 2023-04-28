@@ -83,7 +83,6 @@ body {
 }
 
 main,
-#sobre-mi,
 #skills,
 #formacion,
 #proyectos,
@@ -92,6 +91,15 @@ main,
   height: 100vh;
   position: relative;
   background-color: #edf1fd;
+}
+
+#sobre-mi {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  padding: 0 1 2 3;
+  background-color: #edf1fd
 }
 
 .inicio-container {
@@ -175,8 +183,8 @@ main,
   padding: 30px;
   font-size: 40px;
   color: #17d1ac;
-  margin: 0;
-  margin: 0 20px;
+  margin: 20px 20px 100px 5px;
+  padding: 10px;
 }
 
 #sobre-mi h3 {
@@ -188,11 +196,12 @@ main,
 
 #sobre-mi p {
   color: #bfbfbf;
-  font-size: 20px;
-  width: 70%;
-  font-weight: 300;
-  line-height: 20px;
+  font-size: 25px;
+  width: 100%;
+  font-weight: 30px;
+  line-height: 30px;
   margin: 0 20px;
+  text-align: justify
 }
 
 .cv-btn {
@@ -225,6 +234,7 @@ main,
 
 .hard-skills-title,
 .soft-skills-title {
+  padding: 50px;
   position: absolute;
   top: 10%;
   width: 100%;
