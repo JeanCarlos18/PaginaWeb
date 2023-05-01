@@ -644,8 +644,14 @@ main,
   #formacion,
   #proyectos,
   #contacto {
-    padding: 0;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    font-size: 16px;
   }
 
   .menu-mobile {
@@ -731,10 +737,12 @@ main,
   }
 
   .form {
+    position: absolute;
     display: flex;
     width: 90%;
-    margin: 0 auto;
-    padding-top: 150px;
+    margin: 50px;
+    padding: 30%;
+
   }
 
   .form-mensaje-container {
@@ -826,6 +834,7 @@ main,
   .mobile-btn i {
     font-size: 20px;
   }
+
 
   .hide {
     transition: all 0.5s ease-in;
@@ -1053,6 +1062,7 @@ main,
   }
 
   .inicio-container {
+    position: relative;
     width: 90%;
     top: 10%;
     margin-left: 15px;
@@ -1071,8 +1081,9 @@ main,
   }
 
   .social-container {
-    bottom: 40%;
-    left: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 
   .profile-picture-bg {
@@ -1231,9 +1242,14 @@ main,
     font-size: 20px;
   }
 
+  .inicio-container {
+    position: relative;
+  }
+
   .social-container {
-    bottom: 30%;
-    left: 25%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 
   .formacion-descripcion p:first-child {
